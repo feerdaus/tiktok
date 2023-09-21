@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+.fs14 {
+  font-size: $fs14;
+}
+
 header {
   border-bottom: 2px solid $grey;
   position: sticky;
@@ -157,7 +161,7 @@ header {
 
       &:hover {
         color: #fe2c55;
-        background-color: rgba(254, 44, 85, 0.06);
+        background-color: $red100;
       }
     }
   }
@@ -275,6 +279,48 @@ section {
     width: 100%;
     padding: 20px 0;
     margin: auto;
+
+    .details {
+      img {
+        border-radius: 50%;
+      }
+
+      .name {
+        font-size: 18px;
+        line-height: 24px;
+
+        &:hover a {
+          text-decoration: underline;
+        }
+
+        a {
+          color: $black;
+          text-decoration: none;
+        }
+      }
+    }
+
+    button {
+      height: fit-content;
+      padding: 1px 15px;
+      border-radius: 4px;
+      line-height: 24px;
+
+      &:hover {
+        color: #fe2c55;
+        background-color: $red100;
+      }
+    }
+    .music {
+      a {
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
 

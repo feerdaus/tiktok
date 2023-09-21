@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+.fs14 {
+  font-size: 14px;
+}
+
 header {
   border-bottom: 2px solid rgba(22, 24, 35, 0.0588235294);
   position: sticky;
@@ -226,6 +230,38 @@ section .forYouCard {
   width: 100%;
   padding: 20px 0;
   margin: auto;
+}
+section .forYouCard .details img {
+  border-radius: 50%;
+}
+section .forYouCard .details .name {
+  font-size: 18px;
+  line-height: 24px;
+}
+section .forYouCard .details .name:hover a {
+  text-decoration: underline;
+}
+section .forYouCard .details .name a {
+  color: rgb(22, 24, 35);
+  text-decoration: none;
+}
+section .forYouCard button {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1px 15px;
+  border-radius: 4px;
+  line-height: 24px;
+}
+section .forYouCard button:hover {
+  color: #fe2c55;
+  background-color: rgba(254, 44, 85, 0.06);
+}
+section .forYouCard .music a {
+  color: rgb(22, 24, 35);
+  text-decoration: none;
+}
+section .forYouCard .music a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1072px) {
