@@ -9,8 +9,22 @@
   padding: 0;
 }
 
+.fs12 {
+  font-size: 12px;
+}
+
 .fs14 {
   font-size: 14px;
+}
+
+.fs15 {
+  font-size: 15px;
+}
+
+.mw375 {
+  max-width: 375px;
+  width: 100%;
+  margin: auto;
 }
 
 header {
@@ -27,7 +41,6 @@ header nav .logo {
   width: 300px;
 }
 header nav .search {
-  display: block;
   max-width: 500px;
   background-color: rgba(22, 24, 35, 0.0588235294);
   padding: 12px 16px;
@@ -179,9 +192,6 @@ header nav p {
     width: -moz-fit-content;
     width: fit-content;
   }
-  header nav .search {
-    display: none;
-  }
   .side-nav {
     width: -moz-fit-content;
     width: fit-content;
@@ -237,161 +247,51 @@ footer div {
 section {
   margin-left: 232px;
 }
-section .forYouCard {
-  max-width: 692px;
+section .fContainer {
+  max-width: 736px;
   width: 100%;
   padding: 20px 0;
   margin: auto;
-  border-bottom: 2px solid rgba(22, 24, 35, 0.0588235294);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-section .forYouCard .details img {
+section .fContainer .fCard {
+  width: 226px;
+  height: 302px;
+  position: relative;
+  border-radius: 10px;
+}
+section .fContainer .fCard .content {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+section .fContainer .fCard .content img {
   border-radius: 50%;
+  margin-bottom: 14px;
 }
-section .forYouCard .details .desc {
-  max-width: 510px;
-}
-section .forYouCard .details .name {
+section .fContainer .fCard .content h3 {
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  position: relative;
+  margin: 0;
 }
-section .forYouCard .details .name:hover a {
-  text-decoration: underline;
-}
-section .forYouCard .details .name a {
-  color: rgb(22, 24, 35);
-  text-decoration: none;
-}
-section .forYouCard .details .name:hover .name-content {
-  display: block;
-  opacity: 1;
-}
-section .forYouCard .details .name .name-content {
-  display: none;
-  width: 350px;
-  position: absolute;
-  z-index: 1;
-  left: -75px;
-  top: 64px;
-  padding: 20px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-}
-section .forYouCard .details .name .name-content p {
+section .fContainer .fCard .content h4 {
+  font-weight: 600;
   font-size: 14px;
+  line-height: 18px;
 }
-section .forYouCard .details .tag {
-  text-decoration: none;
-}
-section .forYouCard .details .tag:hover {
-  text-decoration: underline;
-  text-decoration-color: rgb(22, 24, 35);
-}
-section .forYouCard button {
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 1px 15px;
-  border-radius: 4px;
-  line-height: 24px;
-}
-section .forYouCard button:hover {
-  color: #fe2c55;
-  background-color: rgba(254, 44, 85, 0.06);
-}
-section .forYouCard .music a {
-  color: rgb(22, 24, 35);
-  text-decoration: none;
-}
-section .forYouCard .music a:hover p {
-  text-decoration: underline;
-}
-section .forYouCard .vidCard {
-  width: 357px;
-  height: 638px;
-  margin: 10px 20px 0 72px;
-  position: relative;
-}
-section .forYouCard .vidCard .h-dot {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  color: white;
-  font-size: 25px;
-  cursor: pointer;
-}
-section .forYouCard .vidCard:hover .h-dot {
-  display: block;
-}
-section .forYouCard .vidCard:hover .h-dot:hover + .h-dots-content,
-section .forYouCard .vidCard:hover .h-dot .h-dots-content:hover {
-  display: block;
-}
-section .forYouCard .vidCard .h-dots-content {
-  display: none;
-  width: 200px;
-  background-color: white;
-  padding: 15px 0;
-  position: absolute;
-  right: -220px;
-  top: 0;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
-  transition: opacity 0.2s ease;
-}
-section .forYouCard .vidCard .h-dots-content:hover {
-  opacity: 1;
-}
-section .forYouCard .vidCard .h-dots-content li {
-  list-style-type: none;
-  padding: 8px 0;
-  font-size: 14px;
-  font-weight: 500;
-}
-section .forYouCard .vidCard .h-dots-content li i {
-  margin: 0 10px 0 20px;
-}
-section .forYouCard .vidCard .h-dots-content li:hover {
-  background-color: rgba(22, 24, 35, 0.0588235294);
-}
-section .forYouCard .share {
-  position: relative;
-}
-section .forYouCard .share:hover ul {
-  display: block;
-}
-section .forYouCard .share ul {
-  display: none;
-  position: absolute;
-  bottom: 70px;
-  left: -25px;
-  z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
-  width: 240px;
-  padding: 10px 0;
-  background-color: white;
-}
-section .forYouCard .share ul li {
-  padding: 10px;
-}
-section .forYouCard .share ul li:hover {
-  background-color: rgba(22, 24, 35, 0.0588235294);
+section .fContainer .fCard .content button {
+  max-width: 148px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 @media (max-width: 1072px) {
   section {
     margin-left: 80px;
   }
-}
-.reaction {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: rgba(22, 24, 35, 0.0588235294);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
 }
