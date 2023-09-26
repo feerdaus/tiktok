@@ -1,9 +1,18 @@
 @import "./variables.scss";
 
+@font-face {
+  font-family: TiktokFont;
+  src: url("./Font/Tiktok.otf") format("otf");
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "TiktokFont" sans-serif;
 }
 
 .reset {
@@ -13,6 +22,20 @@
 
 .fs14 {
   font-size: $fs14;
+}
+
+.get-app {
+  width: fit-content;
+  position: fixed;
+  z-index: 1;
+  right: 25px;
+  bottom: 20px;
+  cursor: pointer;
+
+  button {
+    font-size: $fs14 !important;
+    color: $black;
+  }
 }
 
 header {
@@ -242,7 +265,9 @@ header {
     .create {
       border-top: 2px solid $grey;
       margin: auto;
-
+      img {
+        margin: 0;
+      }
       button {
         width: 32px;
         padding: 8px;
