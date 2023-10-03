@@ -115,8 +115,9 @@ header {
           position: absolute;
           right: -20px;
           top: 50px;
-          width: 250px;
+          width: 220px;
           box-shadow: $shadow;
+          background-color: white;
 
           li {
             font-weight: 500;
@@ -343,12 +344,10 @@ section {
         }
 
         &:hover .name-content {
-          display: block;
           opacity: 1;
         }
 
         .name-content {
-          display: none;
           width: 350px;
           position: absolute;
           z-index: 1;
@@ -358,7 +357,7 @@ section {
           background-color: white;
           box-shadow: $shadow;
           opacity: 0;
-          transition: opacity 0.2s ease-in-out;
+          transition: opacity 1s ease-in-out;
 
           p {
             font-size: 14px;
@@ -419,13 +418,11 @@ section {
 
         &:hover + .h-dots-content,
         .h-dots-content:hover {
-          display: block;
-          // opacity: 1;
+          opacity: 1;
         }
       }
 
       .h-dots-content {
-        display: none;
         width: 200px;
         background-color: white;
         padding: 15px 0;
@@ -433,8 +430,8 @@ section {
         right: -220px;
         top: 0;
         box-shadow: $shadow;
-        // opacity: 0;
-        transition: opacity 0.2s ease;
+        opacity: 0;
+        transition: opacity 2s ease;
 
         &:hover {
           opacity: 1;
@@ -477,6 +474,9 @@ section {
 
         li {
           padding: 10px;
+          img {
+            margin-right: 10px;
+          }
 
           &:hover {
             background-color: $grey;

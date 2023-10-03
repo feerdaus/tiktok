@@ -33,6 +33,7 @@ header {
   top: 0;
   z-index: 100;
   background-color: white;
+  width: 100%;
 }
 header nav {
   height: 60px;
@@ -263,16 +264,22 @@ section {
 section .fContainer {
   max-width: 736px;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 10px;
   margin: auto;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
 }
 section .fContainer .fCard {
-  width: 226px;
+  max-width: 226px;
+  width: 100%;
   height: 302px;
   position: relative;
   border-radius: 10px;
+}
+section .fContainer .fCard video {
+  width: 100%;
+  height: 100%;
 }
 section .fContainer .fCard .content {
   position: absolute;
@@ -303,8 +310,11 @@ section .fContainer .fCard .content button {
   font-size: 18px;
 }
 
-@media (max-width: 1072px) {
+@media (max-width: 900px) {
   section {
     margin-left: 80px;
+  }
+  section .fContainer {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

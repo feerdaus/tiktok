@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/fordev.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="">
+        <a class="logo" href="/">
+          <img class="logo" src="./images/headerlogo.svg" alt=""
+        /></a>
+
+        <ul class="list-unstyled mb-0 p-0 lglist">
+          <li><a href="">Products</a></li>
+          <li><a href="">Docs</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Log in</a></li>
+        </ul>
+
+        <i class="fa-solid fa-bars menu" style="color: #ffffff"></i>
+
+        <ul class="list-unstyled mb-0 smlist">
+          <li><a href="">Products</a></li>
+          <li><a href="">Docs</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Log in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-maxW">
+        <div class="heading d-flex align-items-center">
+          <img class="pe-1" src="./images/caret.svg" alt="" />
+          <h1 class="text-light fw-bold m-0">
+            Develop for
+            <span class="text_1">creators</span>
+            <!-- <span class="text_2">community</span>
+            <span class="text_3">researchers</span> -->
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="new">
+      <div class="maxW">
+        <h2 class="text-center fs-2 text-light mb-5 fw-bold">What's new</h2>
+
+        <div class="new-left">
+          <div class="content">
+            <ul
+              class="list-unstyled simple-list-example-scrollspy"
+              id="simple-list-example"
+            >
+              <li class="fs-4 fw-bold">
+                <a href="#simple-list-item-1" class="text-decoration-none">
+                  Introducing our Content Posting API
+                  <span>
+                    <p class="fs14 mt-3 text-light mb-5 fw-normal">
+                      Our new Content Posting API offers new ways to share
+                      videos from your web and cloud apps to TikTok. Create a
+                      seamless experience for content creators by posting
+                      directly to their TikTok account or by uploading video
+                      drafts for further editing.
+                    </p>
+                    <p class="text-light fs14 learn">
+                      Learn More
+                      <i
+                        class="fa-solid fa-angle-right"
+                        style="color: #ffffff"
+                      ></i>
+                    </p>
+                  </span>
+                </a>
+              </li>
+
+              <li class="fs-4 fw-bold">
+                <a href="#simple-list-item-2" class="text-decoration-none">
+                  TikTok's OpenSDK is now on GitHub
+                  <span>
+                    <p class="fs14 mt-3 text-light mb-5 fw-normal">
+                      Our OpenSDK is now hosted on GitHub. Explore the source
+                      code or integrate with the SDK to build mobile
+                      authentication and sharing experiences for iOS and
+                      Android.
+                    </p>
+                    <p class="text-light fs14" href="">
+                      Learn More
+                      <i
+                        class="fa-solid fa-angle-right"
+                        style="color: #ffffff"
+                      ></i>
+                    </p>
+                  </span>
+                </a>
+              </li>
+
+              <li class="fs-4 fw-bold">
+                <a href="#simple-list-item-3" class="text-decoration-none">
+                  Collaborating with organizations
+                  <span>
+                    <p class="fs14 mt-3 text-light mb-5 fw-normal">
+                      Smoothly collaborate on developer projects with our latest
+                      feature. Register your apps under organizations to obtain
+                      shared access for enhanced teamwork.
+                    </p>
+                    <p class="text-light fs14" href="">
+                      Learn More
+                      <i
+                        class="fa-solid fa-angle-right"
+                        style="color: #ffffff"
+                      ></i>
+                    </p>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#simple-list-example"
+            data-bs-offset="0"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example img-cont"
+            tabindex="0"
+          >
+            <img
+              id="simple-list-item-1"
+              src="./images/content-posting.png"
+              alt=""
+            /><img
+              id="simple-list-item-2"
+              src="./images/open-source.png"
+              alt=""
+            /><img
+              id="simple-list-item-3"
+              src="./images/organizations-launch.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prod-section">
+      <div class="maxW">
+        <div class="head text-center">
+          <h2>Our products</h2>
+          <p>
+            Build awesome experiences and powerful tools that inspire creativity
+            and allow users to create, connect, and share the world
+          </p>
+        </div>
+
+        <div
+          class="vidCards d-flex flex-wrap justify-content-between gap-5 align-items-stretch"
+        >
+          <div class="card border-0">
+            <video autoplay loop src="./videos/login_kit.mp4"></video>
+            <div class="card-body">
+              <h5 class="fs-4 fw-bold">Login Kit</h5>
+              <p class="card-text">
+                Enable Login Kit so that users can sign into your app or website
+                quickly and securely through their TikTok login credentials. By
+                logging in with TikTok, users can share their videos on your
+                app, bringing creativity from TikTok to your app experience.
+              </p>
+              <a href="#" class="text-decoration-none text-danger fw-bold"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <video autoplay loop src="./videos/video_kit.mp4"></video>
+            <div class="card-body">
+              <h5 class="fs-4 fw-bold">Share Kit</h5>
+              <p class="card-text">
+                Share content to TikTok with just a tap. Add a "Share to TikTok"
+                button to your app so users can share their creative photos and
+                videos with the entire TikTok community.
+              </p>
+
+              <a href="#" class="text-decoration-none text-danger fw-bold"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <video autoplay loop src="./videos/content_posting_api.mp4"></video>
+            <div class="card-body">
+              <h5 class="fs-4 fw-bold">Content Posting API</h5>
+              <p class="card-text">
+                Our API empowers your creators to seamlessly post their content
+                to TikTok.
+              </p>
+
+              <a href="#" class="text-decoration-none text-danger fw-bold"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <video autoplay loop src="./videos/embed.mp4"></video>
+            <div class="card-body">
+              <h5 class="fs-4 fw-bold">Embed videos</h5>
+              <p class="card-text">
+                Make it easy to share your favorite TikTok videos on the web
+                with embeds. Embedded videos will credit the original creator by
+                showcasing their username and link back to their original video
+                on our website.
+              </p>
+
+              <a href="#" class="text-decoration-none text-danger fw-bold"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <video autoplay loop src="./videos/green-screen-kit.mp4"></video>
+            <div class="card-body">
+              <h5 class="fs-4 fw-bold">Green Screen Kit</h5>
+              <p class="card-text">
+                Inspire creativity with Green Screen backgrounds. Users can
+                record themselves over photos and videos shared directly from
+                your app.
+              </p>
+
+              <a href="#" class="text-decoration-none text-danger fw-bold"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <video autoplay loop src="./videos/display-api.mp4"></video>
+            <div class="card-body">
+              <h5 class="fs-4 fw-bold">Display API</h5>
+              <p class="card-text">
+                The Display API contains a set of HTTP-based APIs that your
+                product can use to display TikTok creator's videos and their
+                profile information.
+              </p>
+
+              <a href="#" class="text-decoration-none text-danger fw-bold"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <video autoplay loop src="./videos/content_posting_api.mp4"></video>
+            <div class="card-body">
+              <h5 class="fs-4 fw-bold">Research API</h5>
+              <p class="card-text">
+                The Research API will give researchers access to TikTok public
+                data on user profiles, videos, and comments.
+              </p>
+
+              <a href="#" class="text-decoration-none text-danger fw-bold"
+                >Learn more</a
+              >
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <video autoplay loop src="./videos/content_posting_api.mp4"></video>
+            <div class="card-body">
+              <h5 class="fs-4 fw-bold">Commercial Content API</h5>
+              <p class="card-text">
+                The Commercial Content APIs will allow the public and
+                researchers to perform customized, advertiser name or keyword
+                based searches on ads and other commercial content data that is
+                stored in the Commercial Content Library.
+              </p>
+
+              <a href="#" class="text-decoration-none text-danger fw-bold"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark">
+      <div class="maxW">
+        <div class="links"> 
+          <li href="/" class="flogo">
+            <img src="../About/images/download.svg" alt="" />
+            <h1 class="ms-1 text-light">Tiktok</h1>
+          </li>
+          <ul class="list-unstyled">
+            <li class="fs14 fw-bolder text-light">Company</li>
+            <li><a class="" href="/about?lang=en">About TikTok</a></li>
+            <li>
+              <a class="" href="https://newsroom.tiktok.com/en-us">Newsroom</a>
+            </li>
+            <li><a class="" href="/about/contact?lang=en">Contact</a></li>
+            <li><a class="" href="https://careers.tiktok.com">Careers</a></li>
+            <li">
+              <a class="" href="https://www.bytedance.com">ByteDance</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled">
+            <li class="fs14 fw-bolder text-light">Programs</li>
+            <li><a href="">TikTok for Good</a></li>
+            <li><a href="">TikTok for Developers</a></li>
+            <li><a href="">Effect House</a></li>
+            <li><a href="">Advertise on Tiktok</a></li>
+            <li><a href="">TikTok Rewards</a></li>
+            <li><a href="">TikTok Browse</a></li>
+            <li><a href="">TikTok Embeds</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li class="fs14 fw-bolder text-light">Resources</li>
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Safety Center</a></li>
+            <li><a href="">Creator Portal</a></li>
+            <li><a href="">Community Guidelines</a></li>
+            <li><a href="">Transparency</a></li>
+            <li><a href="">Accessibility </a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li class="fs14 fw-bolder text-light">Legal</li>
+            <li><a href="">Children's Privacy Policy</a></li>
+            <li"><a href="">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="copyright mt-5">
+          
+          <p class="fs14 m-0">© 2023 Tiktok</p>
+        </div>
+      </div>
+
+      
+    </footer>
+  </body>
+</html>

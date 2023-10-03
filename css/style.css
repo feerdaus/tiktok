@@ -1,7 +1,15 @@
+@font-face {
+  font-family: TiktokFont;
+  src: url("./Font/Tiktok.otf") format("otf");
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "TiktokFont" sans-serif;
 }
 
 .reset {
@@ -11,6 +19,20 @@
 
 .fs14 {
   font-size: 14px;
+}
+
+.get-app {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  z-index: 1;
+  right: 25px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.get-app button {
+  font-size: 14px !important;
+  color: rgb(22, 24, 35);
 }
 
 header {
@@ -83,8 +105,9 @@ header nav div .dots ul {
   position: absolute;
   right: -20px;
   top: 50px;
-  width: 250px;
+  width: 220px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+  background-color: white;
 }
 header nav div .dots ul li {
   font-weight: 500;
@@ -202,6 +225,9 @@ header nav p {
     border-top: 2px solid rgba(22, 24, 35, 0.0588235294);
     margin: auto;
   }
+  .side-nav .create img {
+    margin: 0;
+  }
   .side-nav .create button {
     width: 32px;
     padding: 8px;
@@ -263,11 +289,9 @@ section .forYouCard .details .name a {
   text-decoration: none;
 }
 section .forYouCard .details .name:hover .name-content {
-  display: block;
   opacity: 1;
 }
 section .forYouCard .details .name .name-content {
-  display: none;
   width: 350px;
   position: absolute;
   z-index: 1;
@@ -277,7 +301,7 @@ section .forYouCard .details .name .name-content {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 section .forYouCard .details .name .name-content p {
   font-size: 14px;
@@ -327,10 +351,9 @@ section .forYouCard .vidCard:hover .h-dot {
 }
 section .forYouCard .vidCard:hover .h-dot:hover + .h-dots-content,
 section .forYouCard .vidCard:hover .h-dot .h-dots-content:hover {
-  display: block;
+  opacity: 1;
 }
 section .forYouCard .vidCard .h-dots-content {
-  display: none;
   width: 200px;
   background-color: white;
   padding: 15px 0;
@@ -338,7 +361,8 @@ section .forYouCard .vidCard .h-dots-content {
   right: -220px;
   top: 0;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
-  transition: opacity 0.2s ease;
+  opacity: 0;
+  transition: opacity 2s ease;
 }
 section .forYouCard .vidCard .h-dots-content:hover {
   opacity: 1;
@@ -374,6 +398,9 @@ section .forYouCard .share ul {
 }
 section .forYouCard .share ul li {
   padding: 10px;
+}
+section .forYouCard .share ul li img {
+  margin-right: 10px;
 }
 section .forYouCard .share ul li:hover {
   background-color: rgba(22, 24, 35, 0.0588235294);
